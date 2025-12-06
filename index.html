@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="style.css" </head>
+
+<body>
+
+  <div class="main">
+    <header>
+      <img class="logo" src="logos.png">
+      <h1>Financial Literacy for Youth</h1>
+      <p>Learn to manage money smartly!</p>
+    </header>
+  </div>
+  <div class="seo">
+  <nav class="navi">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#learn">Learn</a>
+    <a href="#tools">Tools</a>
+    <a href="#quiz">Quiz</a>
+    <a href="#tips">Tips</a>
+  </nav>
+  </div>
+  <section id="home">
+    <h2>Welcome to Smart Money Learning</h2>
+    <div class="card">
+      <p>This website teaches young people how to save, budget, invest, and manage money in their daily life.</p>
+    </div>
+  </section>
+
+
+  <section id="about">
+    <h2>About Financial Literacy</h2>
+    <div class="card">
+      <p>
+        Financial literacy means understanding how money works — how to earn, save, spend, invest, and manage it wisely.
+        Many young people are not taught money skills in school, so this website explains everything in simple language.
+      </p>
+    </div>
+  </section>
+
+  <!-- LEARNING CONTENT -->
+  <section id="learn">
+    <h2>Learn the Basics</h2>
+
+    <div class="card">
+      <h3>1. Budgeting</h3>
+      <p>Budgeting means planning how you spend your money. Good budgeting helps you save more and avoid wasting money.
+      </p>
+          
+    </div>
+
+    <div class="card">
+      <h3>2. Saving Money</h3>
+      <p>Always save a part of your income. Even small savings can become big over time.</p>
+    </div>
+
+    <div class="card">
+      <h3>3. Digital Payments</h3>
+      <p>Learn to use UPI, ATM, online banking safely. Never share your OTP.</p>
+    </div>
+
+    <div class="card">
+      <h3>4. Investments</h3>
+      <p>Investments like SIP and mutual funds help money grow faster over time.</p>
+    </div>
+  </section>
+
+  <!-- TOOLS SECTION -->
+  <section id="tools">
+    <h2>Savings Calculator</h2>
+    <div class="card">
+      <label>Amount You Save Monthly (₹)</label>
+      <input type="number" id="monthly">
+
+      <label>Number of Months</label>
+      <input type="number" id="months">
+
+      <button onclick="calcSavings()">Calculate</button>
+
+      <h3 id="result"></h3>
+    </div>
+  </section>
+
+  <!-- QUIZ -->
+  <section id="quiz">
+    <h2>Financial Literacy Quiz</h2>
+    <div class="card">
+      <p>1. What is a budget?</p>
+      <input type="radio" name="q1" value="correct" class="int"> A plan for money<br>
+      <input type="radio" name="q1" value="wrong" class="int"> A type of loan<br><br>
+
+      <p>2. What should you never share?</p>
+      <input type="radio" name="q2" value="wrong"> Mobile number<br>
+      <input type="radio" name="q2" value="correct"> OTP<br><br>
+
+      <button onclick="checkQuiz()">Submit Quiz</button>
+      <h3 id="quizResult"></h3>
+    </div>
+  </section>
+
+  <!-- TIPS -->
+  <section id="tips">
+    <h2>Money Tips for Youth</h2>
+
+    <div class="card">Save before you spend.</div>
+    <div class="card">Track your expenses weekly.</div>
+    <div class="card">Avoid unnecessary loans.</div>
+    <div class="card">Never share your OTP or PIN.</div>
+    <div class="card">Start investing early.</div>
+
+  </section>
+  <script>
+    // Savings Calculator
+    function calcSavings() {
+      let m = document.getElementById("monthly").value;
+      let mo = document.getElementById("months").value;
+
+      if (m === "" || mo === "") {
+        alert("Fill all fields");
+        return;
+      }
+
+      let total = m * mo;
+      document.getElementById("result").innerText = "Total Savings: ₹" + total;
+    }
+
+    // Quiz
+    function checkQuiz() {
+      let score = 0;
+
+      let q1 = document.querySelector('input[name="q1"]:checked');
+      let q2 = document.querySelector('input[name="q2"]:checked');
+
+      if (q1 && q1.value === "correct") score++;
+      if (q2 && q2.value === "correct") score++;
+
+      document.getElementById("quizResult").innerText = "Your Score: " + score + "/2";
+    }
+  </script>
+
+</body>
+
+</html>
+</body>
+
+</html>
