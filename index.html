@@ -21,9 +21,9 @@
     <nav class="navi">
       <a class="anc" href="#home">Home</a>
       <a class="anc" href="#about">About</a>
-      <a class="anc" href="#learn">Learn</a>
-      <a class="anc" href="#tools">Tools</a>
-      <a class="anc" href="#quiz">Quiz</a>
+      <a class="anc" href="#learn" >Learn</a>
+      <a class="anc" href="#tools" onclick="thirdPage()">Tools</a>
+      <a class="anc" href="#quiz" onclick="thirdPage()">Quiz</a>
       <a class="anc" href="#tips">Tips</a>
     </nav>
   </div>
@@ -38,7 +38,7 @@
           need to succeed in real life.
           It teaches students and youth how to save, budget, invest, and manage money effectively through simple
           <br>
-          explanations, interactive tools, and real-world examples.<button class="but btn2" onclick="secondPage()" class="btn"> Learn more</button>
+          explanations, interactive tools, and real-world examples.
         </p>
       </div>
     </section>
@@ -98,7 +98,7 @@
     </section>
     <div class="separation"></div>
     <div class="bg">
-      <!-- TOOLS SECTION -->
+
 
       <!-- TIPS -->
       <section id="tips">
@@ -146,6 +146,11 @@
     }
 
 function secondPage(){
+  window.location.href = "index2.html";
+}
+
+
+function thirdPage(){
   window.location.href = "index2.html";
 }
 // assets/video/video2.m4v"
