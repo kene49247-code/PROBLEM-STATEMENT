@@ -11,38 +11,24 @@
 <body>
 
   <div class="main">
-    <header>
+    <!-- <header>
       <img class="logo" src="logos.png">
       <h1>Financial Literacy for Youth</h1>
       <p>Learn to manage money smartly!</p>
     </header>
-  </div>
+  </div> -->
   <div class="seo">
     <nav class="navi">
-      <a href="#home">Home</a>
+      <!-- <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#learn">Learn</a>
       <a href="#tools">Tools</a>
       <a href="#quiz">Quiz</a>
-      <a href="#tips">Tips</a>
+      <a href="#tips">Tips</a> -->
     </nav>
   </div>
   <div class="bg">
-    <section id="home">
-      <h2>Welcome to Smart Money Learning</h2>
-      <div class="card">
-        <p>This website teaches young people how to save, budget, invest, <br>
-          and manage money in their daily life.
-          This website is designed to empower young people with essential financial knowledge and practical skills they
-          <br>
-          need to succeed in real life.
-          It teaches students and youth how to save, budget, invest, and manage money effectively through simple
-          <br>
-          explanations, interactive tools, and real-world examples.<button class="but btn2" onclick="secondPage()" class="btn"> Learn more</button>
-        </p>
-      </div>
-    </section>
-
+  
 
     <section id="about">
       <h2>About Financial Literacy</h2>
@@ -68,6 +54,11 @@
           build a strong foundation for a stable and successful future.<br>
         </p>
       </div>
+    </section>
+    <section>
+       <h2>Search your content</h1>
+       <div class="input"> <input type="text" placeholder="search" width:50vw;><img class="svg" src="svg.svg">
+    </div>
     </section>
 
     <!-- LEARNING CONTENT -->
@@ -96,43 +87,43 @@
         <p>Investments like SIP and mutual funds help money grow faster over time.</p>
       </div>
     </section>
-    <div class="separation"></div>
-    <div class="bg">
+    <!-- <div class="separation"></div> -->
+    <!-- <div class="bg"> -->
       <!-- TOOLS SECTION -->
-      <section id="tools">
+      <!-- <section id="tools">
         <h2>Savings Calculator</h2>
         <div class="card">
           <label>Amount You Save Monthly (₹)</label>
-          <input class="box" type="number" id="monthly">
+          <input type="number" id="monthly">
 
           <label>Number of Months</label>
-          <input class="box" type="number" id="months">
+          <input type="number" id="months">
 
-          <button class="but" onclick="calcSavings()">Calculate</button>
+          <button onclick="calcSavings()">Calculate</button>
 
           <h3 id="result"></h3>
         </div>
-      </section>
-      <div class="separation"></div>
+      </section> -->
+      <!-- <div class="separation"></div> -->
       <!-- QUIZ -->
-      <section id="quiz">
+      <!-- <section id="quiz">
         <h2>Financial Literacy Quiz</h2>
         <div class="card">
           <p>1. What is a budget?</p>
-          <input class="box" type="radio" name="q1" value="correct" class="int"> plan for money<br>
-          <input class="box" type="radio" name="q1" value="wrong" class="int"> type of loan<br><br>
+          <input type="radio" name="q1" value="correct" class="int"> plan for money<br>
+          <input type="radio" name="q1" value="wrong" class="int"> type of loan<br><br>
 
           <p>2. What should you never share?</p>
-          <input class="box" type="radio" name="q2" value="wrong"> Mobile number<br>
-          <input class="box" type="radio" name="q2" value="correct"> OTP<br><br>
+          <input type="radio" name="q2" value="wrong"> Mobile number<br>
+          <input type="radio" name="q2" value="correct"> OTP<br><br>
 
-          <button class="but" onclick="checkQuiz()">Submit Quiz</button>
+          <button onclick="checkQuiz()">Submit Quiz</button>
           <h3 id="quizResult"></h3>
         </div>
-      </section>
-      <div class="separation"></div>
+      </section> -->
+      <!-- <div class="separation"></div> -->
       <!-- TIPS -->
-      <section id="tips">
+      <!-- <section id="tips">
         <h2>Money Tips for Youth</h2>
 
         <div class="card">Save before you spend.</div>
@@ -141,7 +132,7 @@
         <div class="card">Never share your OTP or PIN.</div>
         <div class="card">Start investing early.</div>
 
-      </section>
+      </section> -->
     </div>
   </div>
   <script>
@@ -172,9 +163,45 @@
       document.getElementById("quizResult").innerText = "Your Score: " + score + "/2";
     }
 
-function secondPage(){
-  window.location.href = "index2.html";
-}
+
+
+
+
+
+
+  let button = document.getElementById("sosBtn");
+
+//   button.addEventListener("click", function() {
+//     navigator.geolocation.getCurrentPosition(function(position) {
+//       let latitude = position.coords.latitude;
+//       let longitude = position.coords.longitude;
+
+//       let message = ⚠ SOS! I need help.\n📍 My Location:\nhttps://www.google.com/maps?q=${latitude},${longitude};
+
+//       let whatsappNumber = "918380825490"; // Add trusted phone number with country code
+
+//       let url = https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)};
+
+//       window.open(url, "_blank");
+//     });
+//   });
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   </script>
