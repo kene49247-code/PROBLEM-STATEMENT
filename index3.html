@@ -91,6 +91,7 @@ In 2025, financial literacy has become one of the most demanded skills because:<
           <h3 id="quizResult"></h3>
         </div>
       </section>
+          <button class="but btn2" onclick="firstPage()" class="btn">Back </button>
   <button class="but btn2" onclick="secondPage()" class="btn">Next </button>
     </div>
   </div>
@@ -147,7 +148,9 @@ document.getElementById("searchInput").addEventListener("keypress", function (e)
 function secondPage(){
   window.location.href = "index3.html";
 }
-
+function firstPage(){
+  window.history.back();
+}
 
 </script>
 </body>

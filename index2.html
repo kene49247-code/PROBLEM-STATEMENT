@@ -98,6 +98,7 @@ In 2025, financial literacy has become one of the most demanded skills because:<
         <p>n recent years, personal loans, short-term loans, and credit cards have become extremely easy to access. EMI culture encourages people to buy smartphones, vehicles, appliances, and even lifestyle products on credit. While this gives financial flexibility, many individuals do not understand interest rates, repayment rules, late fees, or the impact on credit score. This leads to long-term debt and financial burden. Proper financial awareness helps people borrow responsibly instead of becoming dependent on credit.</p>
       </div>
     </section>
+    <button class="but btn2" onclick="firstPage()" class="btn">Back </button>
   <button class="but btn2" onclick="secondPage()" class="btn">Next </button>
     </div>
   </div>
@@ -153,6 +154,10 @@ document.getElementById("searchInput").addEventListener("keypress", function (e)
 
 function secondPage(){
   window.location.href = "index3.html";
+}
+
+function firstPage(){
+  window.history.back();
 }
 
 
