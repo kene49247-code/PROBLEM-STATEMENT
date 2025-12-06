@@ -132,6 +132,7 @@ nav{
 }
 
 .btn{
+
   margin-left: 2%;
   width: 10vw;
   
@@ -139,3 +140,13 @@ nav{
 .input{
    
 }
+
+#searchInput{
+height: 50vh;
+width: 50vw;
+
+}
+  
+
+
+

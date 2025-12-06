@@ -135,3 +135,9 @@ nav{
   position: relative;
   top: 1vh;
 }
+.title{
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: start;
+}
