@@ -6,108 +6,113 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>third page</title>
 
-  <link rel="stylesheet" href="style.css"> </head>
+  <link rel="stylesheet" href="style.css">
+</head>
 
 <body>
 
   <div class="main">
-  <div class="bg">
-  <div class="seo">
-    <nav class="navi">
-<div class="title">Tools and Quiz</div>
-    </nav>
-  </div>
-
-    <section id="about">
-      <h2></h2>
-      <div class="card" style="text-align: center;">
-     Tools For Your Finance Management
+    <div class="bg">
+      <div class="seo">
+        <nav class="navi">
+          <div class="title">Tools and Quiz</div>
+        </nav>
       </div>
-    </section>
-    <section>
 
-<div class="search-container">
-           <h2>Search your content</h1>
-    <input type="text" id="searchInput" placeholder="Search" />
-    <button onclick="searchYoutube()" class="search-btn">
-        <img width="14" src="https://cdn-icons-png.flaticon.com/512/482/482631.png" alt="Search">
-    </button>
-</div>
-
-
-
-
-
-
-
-    
-    </section>
-
-  <div class="bg">
-      <!-- TOOLS SECTION -->
-      <section id="tools">
-        <h2>Savings Calculator</h2>
-        <div class="card">
-          <label>Amount You Save Monthly (₹)</label>
-          <input class="box" type="number" id="monthly">
-
-          <label>Number of Months</label>
-          <input class="box" type="number" id="months">
-
-          <button class="but" onclick="calcSavings()">Calculate</button>
-
-          <h3 id="result"></h3>
+      <section id="about">
+        <h2></h2>
+        <div class="card" style="text-align: center;">
+          Tools For Your Finance Management
         </div>
       </section>
-      <div class="separation"></div>
-      <!-- QUIZ -->
-      <section id="quiz">
-        <h2>Financial Literacy Quiz</h2>
-        <div class="card">
-          <p>1. What is a budget?</p>
-          <input class="box" type="radio" name="q1" value="correct" class="int"><div> plan for money</div><br>
-          <input class="box" type="radio" name="q1" value="wrong" class="int"><div> type of loan</div><br><br>
+      <section>
 
-          <p>2. What should you never share?</p>
-          <input class="box" type="radio" name="q2" value="wrong"> <div>Mobile number</div>
-          <br>
-          <input class="box" type="radio" name="q2" value="correct"> <div>OTP</div><br><br>
-
-          <button class="but" onclick="checkQuiz()">Submit Quiz</button>
-          <h3 id="quizResult"></h3>
+        <div class="search-container">
+          <h2>Search your content</h1>
+            <input type="text" id="searchInput" placeholder="Search" />
+            <button onclick="searchYoutube()" class="search-btn">
+              <img width="14" src="https://cdn-icons-png.flaticon.com/512/482/482631.png" alt="Search">
+            </button>
         </div>
+
+
+
+
+
+
+
+
       </section>
-          <button class="but btn2" onclick="firstPage()" class="btn">Back </button>
-  <button class="but btn2" onclick="secondPage()" class="btn">Next </button>
+
+      <div class="bg">
+
+        <section id="tools">
+          <h2>Savings Calculator</h2>
+          <div class="card">
+            <label>Amount You Save Monthly (₹)</label>
+            <input class="box" type="number" id="monthly">
+
+            <label>Number of Months</label>
+            <input class="box" type="number" id="months">
+
+            <button class="but" onclick="calcSavings()">Calculate</button>
+
+            <h3 id="result"></h3>
+          </div>
+        </section>
+        <div class="separation"></div>
+
+        <section id="quiz">
+          <h2>Financial Literacy Quiz</h2>
+          <div class="card">
+            <p>1. What is a budget?</p>
+            <input class="box" type="radio" name="q1" value="correct" class="int">
+            <div> plan for money</div><br>
+            <input class="box" type="radio" name="q1" value="wrong" class="int">
+            <div> type of loan</div><br><br>
+
+            <p>2. What should you never share?</p>
+            <input class="box" type="radio" name="q2" value="wrong">
+            <div>Mobile number</div>
+            <br>
+            <input class="box" type="radio" name="q2" value="correct">
+            <div>OTP</div><br><br>
+
+            <button class="but" onclick="checkQuiz()">Submit Quiz</button>
+            <h3 id="quizResult"></h3>
+          </div>
+        </section>
+        <button class="but btn2" onclick="firstPage()" class="btn">Back </button>
+        <button class="but btn2" onclick="secondPage()" class="btn">Next </button>
+      </div>
     </div>
-  </div>
-  <script>
-    // Savings Calculator
-    function calcSavings() {
-      let m = document.getElementById("monthly").value;
-      let mo = document.getElementById("months").value;
+    <script>
 
-      if (m === "" || mo === "") {
-        alert("Fill all fields");
-        return;
+      function calcSavings() {
+        let m = document.getElementById("monthly").value;
+        let mo = document.getElementById("months").value;
+
+        if (m === "" || mo === "") {
+          alert("Fill all fields");
+          return;
+        }
+
+        let total = m * mo;
+        document.getElementById("result").innerText = "Total Savings: ₹" + total;
       }
 
-      let total = m * mo;
-      document.getElementById("result").innerText = "Total Savings: ₹" + total;
-    }
 
-    // Quiz
-    function checkQuiz() {
-      let score = 0;
+      function checkQuiz() {
+        let score = 0;
 
-      let q1 = document.querySelector('input[name="q1"]:checked');
-      let q2 = document.querySelector('input[name="q2"]:checked');
+        let q1 = document.querySelector('input[name="q1"]:checked');
+        let q2 = document.querySelector('input[name="q2"]:checked');
 
-      if (q1 && q1.value === "correct") score++;
-      if (q2 && q2.value === "correct") score++;
+        if (q1 && q1.value === "correct") score++;
+        if (q2 && q2.value === "correct") score++;
 
-      document.getElementById("quizResult").innerText = "Your Score: " + score + "/2";
-    }
+        document.getElementById("quizResult").innerText = "Your Score: " + score + "/2";
+      }
 
 
 
@@ -115,30 +120,30 @@
 
 
 
-function searchYoutube() {
-    let query = document.getElementById("searchInput").value;
-    if (query.trim() === "") return;
-
-    // Redirect to YouTube search results
-    window.location.href = `https://www.youtube.com/results?search_query=${encodeURIComponent(query)}`;
-}
-
-// Enter key triggers search
-document.getElementById("searchInput").addEventListener("keypress", function (e) {
-    if (e.key === "Enter") {
-        searchYoutube();
-    }
-});
+      function searchYoutube() {
+        let query = document.getElementById("searchInput").value;
+        if (query.trim() === "") return;
 
 
-function secondPage(){
-  window.location.href = "index3.html";
-}
-function firstPage(){
-  window.history.back();
-}
+        window.location.href = `https://www.youtube.com/results?search_query=${encodeURIComponent(query)}`;
+      }
 
-</script>
+
+      document.getElementById("searchInput").addEventListener("keypress", function (e) {
+        if (e.key === "Enter") {
+          searchYoutube();
+        }
+      });
+
+
+      function secondPage() {
+        window.location.href = "index3.html";
+      }
+      function firstPage() {
+        window.history.back();
+      }
+
+    </script>
 </body>
-</html>
 
+</html>

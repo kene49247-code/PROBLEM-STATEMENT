@@ -1,141 +1,150 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
 
 
 
 body {
-   margin: 0;
-   font-family: Arial, sans-serif;
-   background: black;;
-   /* color: #FFD700; */
-   
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: black;
+  ;
+
+
   font-family: 'Poppins', sans-serif;
- }
+}
 
- header {
-   /* background: #0077ff; */
-   padding: 20px;
-   color: white;
-   text-align: center;
- }
+header {
 
- nav {
-   background: #003f88;
-   padding: 10px;
-   text-align: center;
-   display: flex;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
 
- }
+nav {
+  background: #003f88;
+  padding: 10px;
+  text-align: center;
+  display: flex;
 
- nav a:hover {
- color:#FFD700;
-   /* text-shadow: 5px 5px 35px #FFD700;  */
+}
+
+nav a:hover {
+  color: #FFD700;
+
 }
 
 
 
- nav a {
-   color:white;
-   font-weight: bolder;
-   
-   margin: 15px;
-   text-decoration: none;
-   font-size: 20px;
- }
+nav a {
+  color: white;
+  font-weight: bolder;
 
- section {
-   padding: 20px;
-   max-width: 900px;
-   margin: auto;
- }
+  margin: 15px;
+  text-decoration: none;
+  font-size: 20px;
+}
 
- h2 {
-   color: white;
- }
+section {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
 
- .card {
-   background: white;
-   padding: 15px;
-   margin: 15px 0;
-   border-radius: 8px;
-   box-shadow: 0px 0px 35px white;
- }
+h2 {
+  color: white;
+}
 
-.box,.but {
-   padding: 10px;
-   margin: 8px 0;
-   width: 91%;
-   font-size: 15px;
-   border-radius: 10px;
- }
+.card {
+  background: white;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0px 0px 35px white;
+}
 
- button {
-   background: #0077ff;
-   color: white;
-   border: none;
-   cursor: pointer;
- }
+.box,
+.but {
+  padding: 10px;
+  margin: 8px 0;
+  width: 91%;
+  font-size: 15px;
+  border-radius: 10px;
+}
 
- button:hover {
-   background: #005fcc;
- }
- .main{
-  background-image:url("bg image.png");
+button {
+  background: #0077ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #005fcc;
+}
+
+.main {
+  background-image: url("bg image.png");
   background-size: cover;
- }
- .logo{
+}
+
+.logo {
   position: absolute;
   right: 85vw;
   bottom: 78vh;
   height: 25vh;
- }
-nav{
-  border-radius: 50px;
-  background-color:black;
+}
 
- }
- .navi{
+nav {
+  border-radius: 50px;
+  background-color: black;
+
+}
+
+.navi {
   display: flex;
   justify-content: space-around;
   align-items: center;
-   border-radius: 8px;
-   box-shadow: 0px 0px 10px #ccc;
- 
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px #ccc;
 
 
- }
- .seo{
+
+}
+
+.seo {
   display: fle;
- }
-.card{
-  background-color:black;
-  color: white;
- }
+}
 
- .bg{
+.card {
+  background-color: black;
+  color: white;
+}
+
+.bg {
   background-image: url(bg\ image.png );
-    /* background-image: url(bg2.avif); */
+  /* background-image: url(bg2.avif); */
   /* background-size:100vh; */
   background-repeat: no-repeat;
- }
+}
 
- .separation{
+.separation {
   height: 7px;
   position: relative;
   z-index: 20;
   background-color: rgb(46, 44, 44);
 }
 
-.btn2{
+.btn2 {
   margin-left: 2%;
-  width: 25vw ;
-  
+  width: 25vw;
+
 }
-.svg{
+
+.svg {
   position: relative;
   top: 1vh;
 }
-.title{
+
+.title {
   color: white;
   font-size: 20px;
   font-weight: bolder;
@@ -145,22 +154,24 @@ nav{
 
 
 
-@media only screen and (max-width:600px){
-header h1{
-  font-size: 11px;
-}
- .seo nav{
-  width: 50px;
-  font-size: 14px;
-}
+@media only screen and (max-width:600px) {
+  header h1 {
+    font-size: 11px;
+  }
 
-  .anc{
+  .seo nav {
+    width: 50px;
+    font-size: 14px;
+  }
+
+  .anc {
     font-size: 10px;
   }
-.logo{
-  width: 50px ;
-  height: 50px ;
-  bottom: 92vh;
-}
+
+  .logo {
+    width: 50px;
+    height: 50px;
+    bottom: 92vh;
+  }
 
 }

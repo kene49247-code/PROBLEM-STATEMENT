@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>first page</title>
 
-  <link rel="stylesheet" href="style.css"> </head>
+  <link rel="stylesheet" href="style.css">
+</head>
 
 <body>
 
@@ -21,7 +22,7 @@
     <nav class="navi">
       <a class="anc" href="#home">Home</a>
       <a class="anc" href="#about">About</a>
-      <a class="anc" href="#learn" >Learn</a>
+      <a class="anc" href="#learn">Learn</a>
       <a class="anc" href="#tools" onclick="thirdPage()">Tools</a>
       <a class="anc" href="#quiz" onclick="thirdPage()">Quiz</a>
       <a class="anc" href="#tips">Tips</a>
@@ -45,7 +46,7 @@
 
 
     <section id="about">
-      <h2>About Financial Literacy</h2>1  
+      <h2>About Financial Literacy</h2>1
       <div class="card">
         <p>
           Financial literacy means understanding how money works — how to earn, save, spend, invest, and manage it
@@ -53,7 +54,8 @@
           Many young people are not taught money skills in school, so this website explains everything in simple
           language.<br><br>
           Financial literacy means having the knowledge and skills to understand how money works — how to earn it, save
-          it, spend it responsibly, invest it wisely, and manage it throughout life.<br> <br> It is an essential life skill that
+          it, spend it responsibly, invest it wisely, and manage it throughout life.<br> <br> It is an essential life
+          skill that
           helps people make smart financial decisions and avoid common money problems.
 
           However, many young people do not receive proper financial education in school. As a result, they often
@@ -70,7 +72,7 @@
       </div>
     </section>
 
-   
+
     <section id="learn">
       <h2>Learn the Basics</h2>
 
@@ -100,7 +102,7 @@
     <div class="bg">
 
 
-      
+
       <section id="tips">
         <h2>Money Tips for Youth</h2>
 
@@ -112,13 +114,13 @@
 
       </section>
     </div>
-     <button class="but btn2" onclick="secondPage()" class="btn">Next </button>
+    <button class="but btn2" onclick="secondPage()" class="btn">Next </button>
   </div>
   <script>
-   
-   
-   
-  
+
+
+
+
     function calcSavings() {
       let m = document.getElementById("monthly").value;
       let mo = document.getElementById("months").value;
@@ -132,7 +134,7 @@
       document.getElementById("result").innerText = "Total Savings: ₹" + total;
     }
 
-   
+
     function checkQuiz() {
       let score = 0;
 
@@ -145,18 +147,18 @@
       document.getElementById("quizResult").innerText = "Your Score: " + score + "/2";
     }
 
-function secondPage(){
-  window.location.href = "index2.html";
-}
+    function secondPage() {
+      window.location.href = "index2.html";
+    }
 
 
-function thirdPage(){
-  window.location.href = "index3.html";
-}
+    function thirdPage() {
+      window.location.href = "index3.html";
+    }
 
-  
-  
-  
+
+
+
   </script>
 
 </body>
