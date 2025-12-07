@@ -11,20 +11,10 @@
 <body>
 
   <div class="main">
-    <!-- <header>
-      <img class="logo" src="logos.png">
-      <h1>Financial Literacy for Youth</h1>
-      <p>Learn to manage money smartly!</p>
-    </header>
-  </div> -->
+  
   <div class="seo">
     <nav class="navi">
-      <!-- <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#learn">Learn</a>
-      <a href="#tools">Tools</a>
-      <a href="#quiz">Quiz</a>
-      <a href="#tips">Tips</a> -->
+     
     </nav>
   </div>
   <div class="bg">
@@ -61,10 +51,7 @@ In 2025, financial literacy has become one of the most demanded skills because:<
     </button>
 </div>
 
-<!-- 
-       <h2>Search your content</h1>
-       <div class="input"> <input type="text" placeholder="search" width:50vw;><img class="svg" src="svg.svg">
-    </div> -->
+
 
 
 
@@ -73,7 +60,7 @@ In 2025, financial literacy has become one of the most demanded skills because:<
     
     </section>
 
-    <!-- LEARNING CONTENT -->
+   
     <section id="learn">
       <h2>Information about field</h2>
 
@@ -103,7 +90,7 @@ In 2025, financial literacy has become one of the most demanded skills because:<
     </div>
   </div>
   <script>
-    // Savings Calculator
+   
     function calcSavings() {
       let m = document.getElementById("monthly").value;
       let mo = document.getElementById("months").value;
@@ -117,7 +104,7 @@ In 2025, financial literacy has become one of the most demanded skills because:<
       document.getElementById("result").innerText = "Total Savings: ₹" + total;
     }
 
-    // Quiz
+   
     function checkQuiz() {
       let score = 0;
 
@@ -140,11 +127,11 @@ function searchYoutube() {
     let query = document.getElementById("searchInput").value;
     if (query.trim() === "") return;
 
-    // Redirect to YouTube search results
+  
     window.location.href = `https://www.youtube.com/results?search_query=${encodeURIComponent(query)}`;
 }
 
-// Enter key triggers search
+
 document.getElementById("searchInput").addEventListener("keypress", function (e) {
     if (e.key === "Enter") {
         searchYoutube();
